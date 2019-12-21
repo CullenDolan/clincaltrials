@@ -1,0 +1,43 @@
+import requests
+
+##GENERAL QUERIES
+
+#date the data was posted
+data_ver = 'https://ClinicalTrials.gov/api/info/data_vrs'
+#api version
+api_ver = 'https://ClinicalTrials.gov/api/info/api_vrs'
+#returns detailed definitions
+api_def = 'https://ClinicalTrials.gov/api/info/api_defs'
+#returns all data for a single study record
+study_strc = 'https://clinicaltrials.gov/api/info/study_structure'
+#column headers of the data w/ text values Could be the things they search on as a drop down
+study_fields = 'https://clinicaltrials.gov/api/info/study_fields_list'
+#annotated version of study structure
+study_stats = 'https://clinicaltrials.gov/api/info/study_statistics'
+#returns search areas
+search_area = 'https://clinicaltrials.gov/api/info/search_areas'
+
+response = requests.get(study_fields)
+print(response.text)
+
+
+#returns full studies (1-100) based on a search criteria
+pn = requests.get('https://clinicaltrials.gov/api/query/full_studies?expr=peripheral+neuropathy')
+print(pn.text)
+
+#select specific study fields
+pn2 = 'https://clinicaltrials.gov/api/query/study_fields?expr=peripheral+neuropathy&max_rnk=5&fields=Condition,BriefTitle'
+pn2 = requests.get(pn2)
+print(pn2.text)
+
+#returns all value sin a single field
+pn3 = requests.get('https://clinicaltrials.gov/api/query/field_values?expr=peripheral+neuropathy&max_rnk=5&field=Condition')
+print(pn3.text)
+
+#query parameters:
+    #fmt=xml OR json (response format)
+    #expr (the search parameter)
+    #min_rnk
+    #max_rank (full study: 100, study field: 1000, field values: all)
+    #fields=NCTId,Condition,BriefTitle... (specifies fields to return)
+    #field= Condition
