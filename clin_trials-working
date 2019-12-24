@@ -17,12 +17,24 @@ study_stats = 'https://clinicaltrials.gov/api/info/study_statistics'
 #returns search areas
 search_area = 'https://clinicaltrials.gov/api/info/search_areas'
 
+#test the general search criteria
 response = requests.get(study_fields)
 print(response.text)
 
+#ask user for the search terms
+print('List 3 search terms for what you want to search for?')
+expr = input()
+
+#break down the input to add to the link
+space = expr.find(' ')
+bspace = expr.rfind(' ')
+expr_1 = expr[: space]
+expr_2 = expr[space + 1 : bspace]
+expr_3 = expr[bspace + 1 :]
+
 
 #returns full studies (1-100) based on a search criteria
-pn = requests.get('https://clinicaltrials.gov/api/query/full_studies?expr=peripheral+neuropathy')
+pn = requests.get('https://clinicaltrials.gov/api/query/full_studies?expr=' + expr_1)# + '+' + expr_2 + '+'+ expr_3)
 print(pn.text)
 
 #select specific study fields
@@ -30,7 +42,7 @@ pn2 = 'https://clinicaltrials.gov/api/query/study_fields?expr=peripheral+neuropa
 pn2 = requests.get(pn2)
 print(pn2.text)
 
-#returns all value sin a single field
+#returns all values in a single field
 pn3 = requests.get('https://clinicaltrials.gov/api/query/field_values?expr=peripheral+neuropathy&max_rnk=5&field=Condition')
 print(pn3.text)
 

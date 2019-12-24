@@ -1,0 +1,24 @@
+#script to ask user for input and return full study search results
+
+import requests
+
+#ask user for the search terms
+print('List 3 search terms for what you want to search for?')
+expr = input()
+
+#break down the input to add to the link
+space = expr.find(' ')
+bspace = expr.rfind(' ')
+expr_1 = expr[: space]
+expr_2 = expr[space + 1 : bspace]
+expr_3 = expr[bspace + 1 :]
+
+
+#returns full studies (1-100) based on a search criteria
+pn = requests.get('https://clinicaltrials.gov/api/query/full_studies?fmt=json&expr=' + expr_1 + '+' + expr_2 + '+'+ expr_3 + '&max_rnk=1')
+
+#prints all information as text
+print(pn.text)
+
+#saves all info in a logical format in a dictionary
+json_dict = print(pn.json())

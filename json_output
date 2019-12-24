@@ -1,0 +1,298 @@
+{
+  "FullStudiesResponse":{
+    "APIVrs":"1.01.02",
+    "DataVrs":"2019:12:23 23:30:23.392",
+    "Expression":"peripheral neuropathy treatment",
+    "NStudiesAvail":325592,
+    "NStudiesFound":1894,
+    "MinRank":1,
+    "MaxRank":1,
+    "NStudiesReturned":1,
+    "FullStudies":[
+      {
+        "Rank":1,
+        "Study":{
+          "ProtocolSection":{
+            "IdentificationModule":{
+              "NCTId":"NCT03540446",
+              "OrgStudyIdInfo":{
+                "OrgStudyId":"FRT-PN-18"
+              },
+              "Organization":{
+                "OrgFullName":"DyAnsys, Inc.",
+                "OrgClass":"INDUSTRY"
+              },
+              "BriefTitle":"First Relief Treatment for Peripheral Neuropathy",
+              "OfficialTitle":"To Prove the Effectiveness of PENS Therapy With Peripheral Neuropathy",
+              "Acronym":"FRT-PN"
+            },
+            "StatusModule":{
+              "StatusVerifiedDate":"September 2018",
+              "OverallStatus":"Active, not recruiting",
+              "ExpandedAccessInfo":{
+                "HasExpandedAccess":"No"
+              },
+              "StartDateStruct":{
+                "StartDate":"April 4, 2018",
+                "StartDateType":"Actual"
+              },
+              "PrimaryCompletionDateStruct":{
+                "PrimaryCompletionDate":"September 15, 2018",
+                "PrimaryCompletionDateType":"Actual"
+              },
+              "CompletionDateStruct":{
+                "CompletionDate":"October 2018",
+                "CompletionDateType":"Anticipated"
+              },
+              "StudyFirstSubmitDate":"April 24, 2018",
+              "StudyFirstSubmitQCDate":"May 16, 2018",
+              "StudyFirstPostDateStruct":{
+                "StudyFirstPostDate":"May 30, 2018",
+                "StudyFirstPostDateType":"Actual"
+              },
+              "LastUpdateSubmitDate":"September 20, 2018",
+              "LastUpdatePostDateStruct":{
+                "LastUpdatePostDate":"September 24, 2018",
+                "LastUpdatePostDateType":"Actual"
+              }
+            },
+            "SponsorCollaboratorsModule":{
+              "ResponsibleParty":{
+                "ResponsiblePartyType":"Sponsor"
+              },
+              "LeadSponsor":{
+                "LeadSponsorName":"DyAnsys, Inc.",
+                "LeadSponsorClass":"INDUSTRY"
+              }
+            },
+            "OversightModule":{
+              "OversightHasDMC":"Yes",
+              "IsFDARegulatedDrug":"No",
+              "IsFDARegulatedDevice":"No",
+              "IsUSExport":"No"
+            },
+            "DescriptionModule":{
+              "BriefSummary":"To prove the effectiveness of Percutaneous Electrical Neuro-stimulation therapy for the treatment of conditions associated with peripheral neuropathy, in a double-blind environment."
+            },
+            "ConditionsModule":{
+              "ConditionList":{
+                "Condition":[
+                  "Peripheral Neuropathy"
+                ]
+              },
+              "KeywordList":{
+                "Keyword":[
+                  "First Relief",
+                  "Diebetes",
+                  "Pheripheral Neuropathy",
+                  "Pain Releif"
+                ]
+              }
+            },
+            "DesignModule":{
+              "StudyType":"Interventional",
+              "PhaseList":{
+                "Phase":[
+                  "Not Applicable"
+                ]
+              },
+              "DesignInfo":{
+                "DesignAllocation":"Randomized",
+                "DesignInterventionModel":"Factorial Assignment",
+                "DesignPrimaryPurpose":"Treatment",
+                "DesignMaskingInfo":{
+                  "DesignMasking":"Double",
+                  "DesignWhoMaskedList":{
+                    "DesignWhoMasked":[
+                      "Participant",
+                      "Care Provider"
+                    ]
+                  }
+                }
+              },
+              "EnrollmentInfo":{
+                "EnrollmentCount":"66",
+                "EnrollmentType":"Actual"
+              }
+            },
+            "ArmsInterventionsModule":{
+              "ArmGroupList":{
+                "ArmGroup":[
+                  {
+                    "ArmGroupLabel":"Standard stimulation",
+                    "ArmGroupType":"Experimental",
+                    "ArmGroupDescription":"Group A will be treated with First Relief Treatment at standard stimulation.",
+                    "ArmGroupInterventionList":{
+                      "ArmGroupInterventionName":[
+                        "Device: First Relief Treatment"
+                      ]
+                    }
+                  },{
+                    "ArmGroupLabel":"sweep stimulation",
+                    "ArmGroupType":"Experimental",
+                    "ArmGroupDescription":"Group B will be treated with First Relief Treatment at sweep stimulation.",
+                    "ArmGroupInterventionList":{
+                      "ArmGroupInterventionName":[
+                        "Device: First Relief Treatment"
+                      ]
+                    }
+                  },{
+                    "ArmGroupLabel":"Placebo",
+                    "ArmGroupType":"Experimental",
+                    "ArmGroupDescription":"Group C will be treated with First Relief Treatment, receiving a placebo.(dummy device with no electrical stimulation)",
+                    "ArmGroupInterventionList":{
+                      "ArmGroupInterventionName":[
+                        "Device: First Relief Treatment"
+                      ]
+                    }
+                  }
+                ]
+              },
+              "InterventionList":{
+                "Intervention":[
+                  {
+                    "InterventionType":"Device",
+                    "InterventionName":"First Relief Treatment",
+                    "InterventionDescription":"To prove the effectiveness of Percutaneous Electrical Neuro-stimulation therapy for the treatment of conditions associated with peripheral neuropathy, in a double-blind environment.",
+                    "InterventionArmGroupLabelList":{
+                      "InterventionArmGroupLabel":[
+                        "Standard stimulation",
+                        "sweep stimulation",
+                        "Placebo"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "OutcomesModule":{
+              "PrimaryOutcomeList":{
+                "PrimaryOutcome":[
+                  {
+                    "PrimaryOutcomeMeasure":"Reduction of Neuropathy pain",
+                    "PrimaryOutcomeDescription":"This treatments effective outcome will be, \"Percutaneous Electrical Nerve Stimulation therapy will have the ability to reduce the pain and other conditions regarding peripheral neuropathy\" which can be verified through \"Biothesiometer\" parameters.",
+                    "PrimaryOutcomeTimeFrame":"According to the patients condition and other factors expected to reduce pain in 4th week of the treatment"
+                  }
+                ]
+              },
+              "SecondaryOutcomeList":{
+                "SecondaryOutcome":[
+                  {
+                    "SecondaryOutcomeMeasure":"Check for delay of Re-occurrence of pain within a short time",
+                    "SecondaryOutcomeDescription":"After the treatment of 4th week the pain will be reduced and the treatment is continued for other 3 weeks where the booster dose is applied for the assurance of delay of pain which is evaluated manually by the medical personals after 90 days of booster dose treatment",
+                    "SecondaryOutcomeTimeFrame":"90 Days"
+                  }
+                ]
+              },
+              "OtherOutcomeList":{
+                "OtherOutcome":[
+                  {
+                    "OtherOutcomeMeasure":"Complete reduction of conditions associated with peripheral neuropathy",
+                    "OtherOutcomeDescription":"After the overall treatment has been completed the conditions associated with peripheral neuropathy will be completely reduced and the occurrence of the pain will be stopped which can be verified and evaluated through \"Biothesiometer\" parameters.",
+                    "OtherOutcomeTimeFrame":"7 weeks"
+                  }
+                ]
+              }
+            },
+            "EligibilityModule":{
+              "EligibilityCriteria":"Inclusion Criteria:\n\nPatients with Neuropathy pain\n\nExclusion Criteria:\n\nPatient with inbuilt pacemakers or any other devices which allows current into the body, pregnant ladies.",
+              "HealthyVolunteers":"No",
+              "Gender":"All",
+              "MinimumAge":"18 Years",
+              "MaximumAge":"75 Years",
+              "StdAgeList":{
+                "StdAge":[
+                  "Adult",
+                  "Older Adult"
+                ]
+              }
+            },
+            "ContactsLocationsModule":{
+              "OverallOfficialList":{
+                "OverallOfficial":[
+                  {
+                    "OverallOfficialName":"Dr. Gurunath, Ph.D",
+                    "OverallOfficialAffiliation":"Jeevak hospital",
+                    "OverallOfficialRole":"Study Director"
+                  }
+                ]
+              },
+              "LocationList":{
+                "Location":[
+                  {
+                    "LocationFacility":"Clinic",
+                    "LocationCity":"Warangal",
+                    "LocationState":"Telangana",
+                    "LocationZip":"506002",
+                    "LocationCountry":"India"
+                  }
+                ]
+              }
+            },
+            "IPDSharingStatementModule":{
+              "IPDSharing":"No"
+            }
+          },
+          "DerivedSection":{
+            "MiscInfoModule":{
+              "VersionHolder":"December 24, 2019"
+            },
+            "ConditionBrowseModule":{
+              "ConditionMeshList":{
+                "ConditionMesh":[
+                  {
+                    "ConditionMeshId":"D000010523",
+                    "ConditionMeshTerm":"Peripheral Nervous System Diseases"
+                  }
+                ]
+              },
+              "ConditionAncestorList":{
+                "ConditionAncestor":[
+                  {
+                    "ConditionAncestorId":"D000009468",
+                    "ConditionAncestorTerm":"Neuromuscular Diseases"
+                  },{
+                    "ConditionAncestorId":"D000009422",
+                    "ConditionAncestorTerm":"Nervous System Diseases"
+                  }
+                ]
+              },
+              "ConditionBrowseLeafList":{
+                "ConditionBrowseLeaf":[
+                  {
+                    "ConditionBrowseLeafId":"M12015",
+                    "ConditionBrowseLeafName":"Peripheral Nervous System Diseases",
+                    "ConditionBrowseLeafAsFound":"Peripheral Neuropathy",
+                    "ConditionBrowseLeafRelevance":"high"
+                  },{
+                    "ConditionBrowseLeafId":"M11649",
+                    "ConditionBrowseLeafName":"Pain",
+                    "ConditionBrowseLeafRelevance":"low"
+                  },{
+                    "ConditionBrowseLeafId":"M10994",
+                    "ConditionBrowseLeafName":"Neuromuscular Diseases",
+                    "ConditionBrowseLeafRelevance":"low"
+                  }
+                ]
+              },
+              "ConditionBrowseBranchList":{
+                "ConditionBrowseBranch":[
+                  {
+                    "ConditionBrowseBranchAbbrev":"BC10",
+                    "ConditionBrowseBranchName":"Nervous System Diseases"
+                  },{
+                    "ConditionBrowseBranchAbbrev":"All",
+                    "ConditionBrowseBranchName":"All Conditions"
+                  },{
+                    "ConditionBrowseBranchAbbrev":"BC23",
+                    "ConditionBrowseBranchName":"Symptoms and General Pathology"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
